@@ -1,0 +1,1286 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></meta>
+      <meta name="description" content="Vattenförekomster kustvatten för vattendirektivets tredje förvaltningscykel, levererat av SMHI i maj 2017. Version 2016_1. De vattenförekomster som är nya är märkta med P i attributet vattenförekomst. Redan beslutade vattenförekomster har värdet Y. Från och med cykel tre har ID-sättningen förändrats och länkningar till VISS skall göras enligt URL-fältet. Vattenförekomsterna har reviderats flera gånger sedan 2017 med en slutleverans version 2016_6 februari 2020."></meta>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge"></meta>
+      <link rel="icon" href="resources/lst_favi.ico" type="image/ico"></link>
+      <link rel="stylesheet" type="text/css" href="https://ext-geodatakatalog.lansstyrelsen.se/GeodataKatalogen/metadataResponse/Style2/styles.css"></link>
+      <link rel="stylesheet" type="text/css" href="https://ext-geodatakatalog.lansstyrelsen.se/GeodataKatalogen/metadataResponse/Style2/TreeFromXMLUsingXSLT.css"></link><script type="text/javascript" src="https://ext-geodatakatalog.lansstyrelsen.se/GeodataKatalogen/metadataResponse/Style2/tabs.js">
+.//</script><script type="text/javascript" src="https://ext-geodatakatalog.lansstyrelsen.se/GeodataKatalogen/metadataResponse/Style2/metagis.js">
+.//</script><script type="text/javascript" src="https://ext-geodatakatalog.lansstyrelsen.se/GeodataKatalogen/metadataResponse/Style2/AnchorPosition.js">
+.//</script><script type="text/javascript" src="https://ext-geodatakatalog.lansstyrelsen.se/GeodataKatalogen/metadataResponse/Style2/PopupWindow.js">
+.//</script><script type="text/javascript" src="https://ext-geodatakatalog.lansstyrelsen.se/GeodataKatalogen/metadataResponse/Style2/TreeJS.js">
+.//</script><script type="text/javascript" src="https://ext-geodatakatalog.lansstyrelsen.se/GeodataKatalogen/metadataResponse/ajax/libs/jquery/1.11.1/jquery.min.js"></script><script type="text/javascript">
+                    var resourceType = 'dataset';
+                    var keywords = 'LST Verksamhetsdata';
+                    
+                    
+                    if (document.addEventListener){
+                        document.addEventListener('DOMContentLoaded', function(){                        
+                            setHeight(resourceType);
+                            setElementResType(resourceType, keywords);
+							openRecordButton();
+                        });
+                    }
+                    else
+                    {
+                        
+                        document.attachEvent('DOMContentLoaded', function(){                        
+                            setHeight(resourceType);
+                            setElementResType(resourceType, keywords);
+							openRecordButton();
+                        });
+                    }
+                    
+                    
+                                        
+                            $(document).mouseup(function (e) {
+                                $('.tabbernav').click(function() {
+                                       fixTopSection();                                                              
+                                });
+                            });                                                
+                        
+                </script><title>VM Vattenförekomster kustvatten 2016-2021</title>
+   </head>
+   <body oncontextmenu="return true">
+      <div id="fixDiv">
+         <div><a class="topSuccessBtn" style="float:right;cursor:pointer;text-decoration:underline;margin-top:9px;" onClick="printBtnClickEvent()">Skriv ut</a><a class="openGeodataKatalogenBtnCls" style="float:right;cursor:pointer;margin-right:5px;margin-top:9px;" id="openRecordInGdeBtnId" onClick="openRecordInGdeBtnClickEvent()">Öppna i Geodatakatalogen</a><a class="topSuccessBtn" style="float:right;cursor:pointer;text-decoration:underline;margin-right:5px;margin-top:9px;" onClick="customAlert.render('xml')">XML</a><a class="topSuccessBtn" style="float:right;cursor:pointer;text-decoration:underline;margin-right:5px;margin-top:9px;" onClick="customAlert.render('html')">HTML</a><p style="float:right;line-height:0px;margin-right:5px;font-weight:bold;margin-top:19px;">
+               Länk till posten
+               
+            </p>
+         </div><span class="title">VM Vattenförekomster kustvatten 2016-2021</span><br></br></div>
+      <div id="dialogoverlay"></div>
+      <div id="dialogbox">
+         <div>
+            <div id="dialogboxbody"></div>
+            <div id="dialogboxfoot"></div>
+         </div>
+      </div>
+      <div id="metadataTabberDiv" class="tabber">
+         <div class="tabbertab">
+            <h2>SAMMANFATTNING</h2>
+            <div><a style="cursor:pointer;text-decoration:underline;" onClick="mdContactFormTitleClick()"><img src="https://ext-geodatakatalog.lansstyrelsen.se/GeodataKatalogen/resources/tycktill.jpg" alt="Tyck till"></img></a><div id="msgSuccessErrorBox"></div>
+            </div>
+            <div id="metadataContactDiv" style="display:none; width:95%; border-top:2px solid #ABABAB">
+               <form id="metadataContactForm" name="metadataContactForm" style="padding:0px 0 0 50px;" method="post" onsubmit="return mdContactFormValidation()">
+                  <p>Här kan du ge synpunkter på data och metadata. Fält märkta med * är obligatoriska
+                     uppgifter.
+                  </p>
+                  <table border="0">
+                     <tr>
+                        <td>Namn *</td>
+                        <td><input name="name" type="text" size="35"></input></td>
+                     </tr>
+                     <tr>
+                        <td>E-post *</td>
+                        <td><input name="email" type="text" size="35"></input></td>
+                     </tr>
+                     <tr>
+                        <td>Organisation</td>
+                        <td><input name="org" type="text" size="35"></input></td>
+                     </tr>
+                     <tr>
+                        <td>Kommentar *</td>
+                        <td><textarea name="comments" cols="38" rows="5">&nbsp;</textarea></td>
+                     </tr>
+                     <tr>
+                        <td></td>
+                        <td><input style="float:left" type="submit" name="Submit" value="Skicka"></input><div style="display:none; float:right" id="msgSendingTag">Meddelandet skickas
+                              <img align="absmiddle" src="include/ext-3.4.0/resources/images/default/shared/loading-balls.gif" alt="Tyck til"></img></div>
+                        </td>
+                     </tr>
+                  </table><input type="hidden" name="metadataTitle" value="VM Vattenförekomster kustvatten 2016-2021"></input><input type="hidden" name="metadataToAddress" value="vattenmyndigheten.geodata@lansstyrelsen.se; "></input></form>
+            </div><br></br><div id="MainDiv">
+               <div id="leftDiv">
+                  <div id="imageDiv"><img alt="" src=""></img></div>
+                  <div id="resType">
+                     <p class="heading"> Resurstyp </p>
+                     <p id="resTypeText" class="content" style="text-align: left;line-height: 40px; ">Datamängd</p>
+                  </div>
+                  <div id="lstDiv">
+                     <p class="heading">Aktualitet</p>
+                     <table id="lstData">
+                        <tr>
+                           <td id="ForvaltingsStatustd1" class="heading">Förvaltningsstatus</td>
+                           <td id="ForvaltingsStatustd2">Aktuell</td><script type="text/javascript">changeBgColor('#008000','ForvaltingsStatus','#FFFFFF','other');</script></tr>
+                        <tr>
+                           <td class="heading">Skapat</td>
+                           <td>2017-05-10</td>
+                        </tr>
+                        <tr>
+                           <td class="heading">Reviderat</td>
+                           <td>2022-01-18</td>
+                        </tr>
+                        <tr>
+                           <td class="heading">Granskningsdatum</td>
+                           <td>2021-01-28</td>
+                        </tr>
+                        <tr>
+                           <td class="heading">Granskningsfrekvens</td>
+                           <td>Årligen</td>
+                        </tr>
+                        <tr>
+                           <td class="heading">Nästa granskningsdatum</td>
+                           <td>2022-01-28</td>
+                        </tr>
+                        <tr>
+                           <td class="heading">Senast replikerat från intern till extern miljö</td>
+                           <td></td>
+                        </tr>
+                     </table>
+                  </div>
+               </div>
+               <div id="rightDiv">
+                  <div id="topDiv" style="margin-top:14px;">
+                     <div id="title">
+                        <p class="heading"> Titel </p>
+                        <p class="content">VM Vattenförekomster kustvatten 2016-2021</p>
+                     </div>
+                  </div>
+                  <div id="abstractDivNew">
+                     <p class="heading"> Beskrivning </p>
+                     <p class="content" style="padding-right:10px;"><pre id="prew1518aac19b1b1b1b1b11">Vattenförekomster kustvatten för vattendirektivets tredje förvaltningscykel, levererat av SMHI i maj 2017. Version 2016_1. De vattenförekomster som är nya är märkta med "P" i attributet vattenförekomst. Redan beslutade vattenförekomster har värdet "Y". Från och med cykel tre har ID-sättningen förändrats och länkningar till VISS skall göras enligt URL-fältet. Vattenförekomsterna har reviderats flera gånger sedan 2017 med en slutleverans version 2016_6 februari 2020.</pre><script type="text/javascript">                            
+                            fix2('prew1518aac19b1b1b1b1b11','abstractDiv');
+                            setLinkClickable('abstractDivNew');                            
+                        </script></p>
+                  </div>
+                  <div id="contactDiv" style="min-height:120px;">
+                     <p class="heading"> Kontaktuppgift </p>
+                     <table id="contactTable" style="width:99%;border-collapse:collapse;margin-left:3px;">
+                        <p class="content">
+                           <tr>
+                              <td>Ansvarig organisation</td>
+                              <td>Vattenmyndigheterna</td>
+                           </tr>
+                           <tr>
+                              <td>Organisatorisk tillhörighet</td>
+                              <td>LST Vattenmyndigheterna</td>
+                           </tr>
+                        </p>
+                     </table>
+                  </div>
+                  <div id="restrictions" style="min-height:70px;">
+                     <p class="heading"> Restriktioner </p>
+                     <table id="contactTable" style="width:99%;border-collapse:collapse;margin-left:3px;">
+                        <tr>
+                           <td>Användningsretriktioner</td>
+                           <td><pre id="prew1518aac19b1c19b1">
+              Creative Commons universell (CC0 1.0)
+
+Public domain-dedikation: INGEN UPPHOVSRÄTT:
+
+Du får kopiera modifiera distribuera och framföra verket även i kommersiellt syfte utan att fråga om lov. Se mer information nedan.
+
+Kortfattad beskrivning: https://creativecommons.org/publicdomain/zero/1.0/deed.sv
+
+Full licenstext: https://creativecommons.org/publicdomain/zero/1.0/legalcode.sv
+            </pre><script type="text/javascript">  				
+						fix2('prew1518aac19b1c19b1','restrictionSummaryMetadataTabId');
+					</script></td>
+                        </tr>
+                        <tr>
+                           <td>Åtkomstrestriktioner</td>
+                           <td><pre id="prew1518aac19b1c17b1">
+              inga tillämpliga villkor
+            </pre><script type="text/javascript">  
+						fix2('prew1518aac19b1c17b1','restrictionSummaryMetadataTabId');
+					</script></td>
+                        </tr>
+                     </table>
+                  </div>
+                  <div id="linksDiv" style="margin-top:5px;">
+                     <p id="linksTitle" class="heading"> Lista m Resurer </p>
+                     <table id="distributionInfo" class="onlineDetail">
+                        <tr bgcolor="#FFFFFF">
+                           <td style="width:35%;height:25px;">
+                              <p class="content"><img class="protocolIcon" title="Klicka på ikonen för att öppna länk till mer information Vattenmyndighetens webbsida" alt="" src="https://ext-geodatakatalog.lansstyrelsen.se/GeodataKatalogen/metadataResponse/Style2/Icons/Protocol_Icons/world_link.png"></img> <a class="dynamicLink" target="_blank" href="https://www.vattenmyndigheterna.se/vattenforvaltning/tillstandet-i-vattnet.html">https://www.vattenmyndigheterna.se/vattenforvaltning/tillstandet-i-vattnet.html</a></p>
+                           </td>
+                           <td style="width:32%;height:25px;">
+                              <p class="content">Vattenmyndighetens webbsida</p>
+                           </td>
+                           <td style="width:32%;height:25px;">
+                              <p class="content">Vattenmyndighetens webbsida</p>
+                           </td>
+                        </tr>
+                        <tr bgcolor="#FFFFFF">
+                           <td style="width:35%;height:25px;">
+                              <p class="content"><img class="protocolIcon" title="Atom tjänst - klicka på ikonen för att se webbadressen Atom-fil" alt="" src="https://ext-geodatakatalog.lansstyrelsen.se/GeodataKatalogen/metadataResponse/Style2/Icons/Protocol_Icons/atom_link.png"></img> <a class="dynamicLink" onClick="                                                                  &#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;openAtomView('https://ext-dokument.lansstyrelsen.se/gemensamt/geodata/ATOM/ATOM_vm.Kustvatten_Vattenforekomster_2016_1.xml');&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;">https://ext-dokument.lansstyrelsen.se/gemensamt/geodata/ATOM/ATOM_vm.Kustvatten_Vattenforekomster_2016_1.xml</a></p>
+                           </td>
+                           <td style="width:32%;height:25px;">
+                              <p class="content">Atom-fil</p>
+                           </td>
+                           <td style="width:32%;height:25px;">
+                              <p class="content">Atom-fil</p>
+                           </td>
+                        </tr>
+                     </table>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div id="allMetadataTab" class="tabbertab">
+            <h2>ALLA METADATA</h2>
+            <div id="fixSubTabDiv">
+               <table id="subData">
+                  <tr>
+                     <td id="Identifiering_Col" class="LST_V LST_A LST_E LST_N application document underlag webpage software grpLyr service series" onclick="highlightSubTab(this.id);" style="border-bottom-color:blue;display:none;"><a href="#Identifiering">
+                           <p class="subTabMenu">Beskrivning</p></a></td>
+                     <td id="Resurskontakter_Col" onclick="highlightSubTab(this.id);"><a href="#Resurskontakter">
+                           <p class="subTabMenu">Kontaktinformation</p></a></td>
+                     <td id="Geometri_Col" class="LST_V LST_N application document underlag webpage software grpLyr service series" style="display:none;" onclick="highlightSubTab(this.id);"><a href="#Geometri">
+                           Utsträckning                            
+                           </a></td>
+                     <td id="Restriktioner_Col" class="LST_V LST_E LST_N document application webpage software grpLyr service series" style="display:none;" onclick="highlightSubTab(this.id);"><a href="#Restriktioner">
+                           Restriktioner
+                           </a></td>
+                     <td id="InfoClassification_Col" class="LST_V LST_N document application webpage software grpLyr service series" style="display:none;" onclick="highlightSubTab(this.id);"><a href="#InformationClassification">
+                           Informationsklassning
+                           </a></td>
+                     <td id="Underhall_Col" class="LST_V LST_N grpLyr service series" style="display:none;" onclick="highlightSubTab(this.id);"><a href="#Underhall">                            
+                           Underhåll
+                           </a></td>
+                     <td id="Resursstatus_Col" class="LST_V LST_A LST_E LST_N application document underlag webpage software grpLyr service series" style="display:none;" onclick="highlightSubTab(this.id);"><a href="#Resursstatus">                            
+                           Förvaltningsstatus
+                           </a></td>
+                     <td id="Beskrivning_Col" class="LST_V LST_N grpLyr service series" style="display:none;" onclick="highlightSubTab(this.id);"><a href="#Beskrivning">
+                           <p id="dynamicTab" class="subTabMenu">Beskrivning av datamängd</p></a></td>
+                     <td id="aggregation_Col" class="LST_V LST_A LST_N application document underlag webpage software grpLyr service series" style="display:none;" onclick="highlightSubTab(this.id);"><a href="#aggregation">                            
+                           Relaterad information
+                           </a></td>
+                     <td id="Kvalitet_Col" class="LST_V LST_A LST_E LST_N underlag document application webpage software grpLyr service series" style="display:none;" onclick="highlightSubTab(this.id);"><a href="#Kvalitet">                            
+                           Kvalitet
+                           </a></td>
+                     <td id="Referenssystem_Col" class="LST_V LST_N grpLyr service series" style="display:none;" onclick="highlightSubTab(this.id);"><a href="#Referenssystem">                            
+                           Referenssystem
+                           </a></td>
+                     <td id="Distributor_Col" class="LST_V LST_N grpLyr document application webpage software grpLyr service series" style="display:none;" onclick="highlightSubTab(this.id);"><a href="#Distributor">
+                           <p class="subTabMenu">Åtkomst</p></a></td>
+                     <td id="objectType_Col" class="LST_V LST_A LST_E LST_N application document underlag webpage software grpLyr service series" style="display:none;" onclick="highlightSubTab(this.id);"><a href="#ObjectType">
+                           <p class="subTabMenu">Objekttypskatalog</p></a></td>
+                     <td id="Forvaltningsdokumentaion_Col" class="LST_V LST_A LST_E LST_N application document underlag webpage software grpLyr service series MST_E" style="display:none;" onclick="highlightSubTab(this.id);"><a href="#Forvaltningsdok">                        
+                           Förvaltningsdokumentation
+                           </a></td>
+                     <td id="Info_om_Metadata_Col" class="LST_V LST_A LST_E LST_N application document underlag webpage software grpLyr service series" style="display:none;" onclick="highlightSubTab(this.id);"><a href="#Info_om_Metadata">
+                           <p class="subTabMenu">Information om metadata</p></a></td>
+                  </tr>
+               </table>
+               <hr id="hrTabs"></hr>
+            </div><a id="Identifiering" class="subTabLinks">
+               <div id="InfoIdentifiering" class="InfoMetadata LST_V LST_A LST_E LST_N application document underlag webpage software grpLyr service series" style="display:none;"><br></br><p id="divTitle"> Beskrivning </p>
+                  <hr></hr>
+                  <table class="infoData">
+                     <tr class="LST_V LST_A LST_E LST_N application document underlag webpage software grpLyr service series" style="display:none;">
+                        <td class="elementTitle"> Titel: </td>
+                        <td><label>VM Vattenförekomster kustvatten 2016-2021</label></td>
+                     </tr>
+                     <tr class="LST_V document underlag grpLyr service series" style="display:none;">
+                        <td class="elementTitle"> Alternativ titel: </td>
+                        <td><label>Vattenförekomster kustvatten 2016_6</label></td>
+                     </tr>
+                  </table>
+                  <table class="infoData document" style="display:none;">
+                     <tr>
+                        <td class="elementTitle" style="vertical-align:top;"> ISBN: </td>
+                        <td><label></label></td>
+                     </tr>
+                     <tr>
+                        <td class="elementTitle" style="vertical-align:top;"> ISSN: </td>
+                        <td><label></label></td>
+                     </tr>
+                     <tr>
+                        <td class="elementTitle" style="vertical-align:top;"> Serienamn: </td>
+                        <td><label></label></td>
+                     </tr>
+                     <tr>
+                        <td class="elementTitle" style="vertical-align:top;"> Serienummer: </td>
+                        <td><label></label></td>
+                     </tr>
+                  </table>
+                  <div class="LST_V LST_A LST_E LST_N grpLyr service series" style="display:none;">
+                     <table class="infoData">
+                        <tr>
+                           <td colspan="5" class="elementTitle"> Händelsedatum </td>
+                        </tr>
+                     </table>
+                     <table class="detailTable">
+                        <tr class="tableHead">
+                           <td class="elementTitle">Händelsedatum</td>
+                           <td class="elementTitle">Händelse</td>
+                        </tr>
+                        <tr class="tableContent">
+                           <td>2017-05-10</td>
+                           <td>skapat</td>
+                        </tr>
+                        <tr class="tableContent">
+                           <td>2022-01-18</td>
+                           <td>reviderat</td>
+                        </tr>
+                     </table>
+                  </div>
+                  <div class="LST_V LST_A LST_E LST_N underlag document application webpage software grpLyr service series MST_E_Handelselogg" style="display:none;">
+                     <table class="infoData" style="margin-top:6px;">
+                        <tr>
+                           <td colspan="3" class="elementTitle"> Händelselogg </td>
+                        </tr>
+                     </table>
+                     <table class="detailTable">
+                        <tr class="tableHead">
+                           <td class="elementTitle">Händelsetyp</td>
+                           <td class="elementTitle">Händelsedatum</td>
+                           <td class="elementTitle">Händelsebeskrivning</td>
+                        </tr>
+                        <tr class="emptyContent">
+                           <td colspan="3"></td>
+                        </tr>
+                     </table>
+                  </div>
+                  <table class="infoData" style="margin-top:6px;">
+                     <tr class="LST_N" style="display:none;">
+                        <td class="elementTitle" style="vertical-align:top;"> Identifierare för resursen: </td>
+                        <td><label></label></td>
+                     </tr>
+                     <tr class="LST_V LST_A LST_E LST_N grpLyr service series MST_E" style="display:none;">
+                        <td class="elementTitle" style="vertical-align:top;"> Sökväg till data: </td>
+                        <td><label></label></td>
+                     </tr>
+                     <tr class="LST_V LST_A LST_E LST_N application document underlag webpage software grpLyr service series" style="display:none;">
+                        <td class="elementTitle" style="vertical-align:top;"> Beskrivning: </td>
+                        <td><label style="width:600px;"><pre id="prew1518a1">Vattenförekomster kustvatten för vattendirektivets tredje förvaltningscykel, levererat av SMHI i maj 2017. Version 2016_1. De vattenförekomster som är nya är märkta med "P" i attributet vattenförekomst. Redan beslutade vattenförekomster har värdet "Y". Från och med cykel tre har ID-sättningen förändrats och länkningar till VISS skall göras enligt URL-fältet. Vattenförekomsterna har reviderats flera gånger sedan 2017 med en slutleverans version 2016_6 februari 2020.</pre><script type="text/javascript">
+                                    fix2('prew1518a1','abstractDiv1');
+                                    setLinkClickable('abstractDiv1') 
+                                </script></label></td>
+                     </tr>
+                  </table>
+                  <div class="application document underlag webpage software" style="display:none;">
+                     <table class="infoData" style="margin-top:6px;">
+                        <tr>
+                           <td colspan="2" class="elementTitle"> Exempelbilder </td>
+                        </tr>
+                     </table>
+                     <table class="detailTable">
+                        <tr class="tableHead">
+                           <td class="elementTitle">Sökväg</td>
+                           <td class="elementTitle">Bildtext</td>
+                           <td class="elementTitle">Bildformat</td>
+                        </tr>
+                        <tr class="emptyContent">
+                           <td colspan="3"></td>
+                        </tr>
+                     </table>
+                  </div>
+                  <div id="ThesaSection" style="display:none;">
+                     <table class="infoData">
+                        <tr>
+                           <td colspan="2" class="elementTitle"> Nyckelord </td>
+                        </tr>
+                     </table>
+                     <table class="detailTable" style="width:70%;">
+                        <tr class="tableHead">
+                           <td class="elementTitle" style="width:6%;">Namn</td>
+                           <td class="elementTitle">Nyckelord</td>
+                        </tr>
+                        <table class="detailTable" style="display:none;width:70%;" id="ThesaList1">
+                           <tr class="tableContent">
+                              <td style="width:25%;" rowspan="1">LST Resursklass</td>
+                              <td>LST Verksamhetsdata</td>
+                           </tr><script type="text/javascript">
+                                var resourceType = 'dataset';
+                                var keywords = 'LST Verksamhetsdata';
+                                var thesaName = 'LST Resursklass'
+                                var id = 'ThesaList1'
+                                displaySection_AllMetadata('Keywords', resourceType,keywords,thesaName,id);
+                            </script></table>
+                        <table class="detailTable" style="display:none;width:70%;" id="ThesaList2">
+                           <tr class="tableContent">
+                              <td style="width:25%;" rowspan="1">Har personuppgifter</td>
+                              <td>Nej</td>
+                           </tr><script type="text/javascript">
+                                var resourceType = 'dataset';
+                                var keywords = 'LST Verksamhetsdata';
+                                var thesaName = 'Har personuppgifter'
+                                var id = 'ThesaList2'
+                                displaySection_AllMetadata('Keywords', resourceType,keywords,thesaName,id);
+                            </script></table>
+                        <table class="detailTable" style="display:none;width:70%;" id="ThesaList3">
+                           <tr class="tableContent">
+                              <td style="width:25%;" rowspan="2">Publiceringsmål</td>
+                              <td>Länsstyrelsens externa Geodatakatalog</td>
+                           </tr>
+                           <tr class="tableContent" id="ThesaList3">
+                              <td>Länsstyrelsens externa Geodatakatalog (data)</td>
+                           </tr><script type="text/javascript">
+                                var resourceType = 'dataset';
+                                var keywords = 'LST Verksamhetsdata';
+                                var thesaName = 'LGK Publiceringsmål'
+                                var id = 'ThesaList3'
+                                displaySection_AllMetadata('Keywords', resourceType,keywords,thesaName,id);
+                            </script></table>
+                     </table>
+                  </div>
+                  <table class="infoData LST_V LST_N grpLyr service series" style="margin-top:10px;display:none;">
+                     <tr class="LST_V LST_N grpLyr service series" style="display:none;">
+                        <td class="elementTitle" style="vertical-align:top;"> Ämnesområde: </td>
+                        <td><label>Kust och hav</label></td>
+                     </tr>
+                     <tr class="LST_N" style="display:none;">
+                        <td class="elementTitle" style="vertical-align:top;"> Teckenuppsättning: </td>
+                        <td><label></label></td>
+                     </tr>
+                  </table>
+                  <div class="LST_V_E LST_N_E series_E" style="display:none;">
+                     <table class="infoData" style="margin-top:6px;">
+                        <tr>
+                           <td colspan="2" class="elementTitle"> Exempelbilder </td>
+                        </tr>
+                     </table>
+                     <table class="detailTable">
+                        <tr class="tableHead">
+                           <td class="elementTitle">Sökväg</td>
+                           <td class="elementTitle">Bildtext</td>
+                           <td class="elementTitle">Bildformat</td>
+                        </tr>
+                        <tr class="emptyContent">
+                           <td colspan="3"></td>
+                        </tr>
+                     </table>
+                  </div>
+               </div></a><a id="Resurskontakter" class="subTabLinks">
+               <div id="InfoResurskontakter" class="InfoMetadata"><br></br><p id="divTitle"> Kontaktinformation </p>
+                  <hr></hr>
+                  <div id="resourceContacts">
+                     <table class="infoData" style="margin-top:10px;">
+                        <tr>
+                           <td colspan="5" class="elementTitle"> Kontaktuppgift </td>
+                        </tr>
+                     </table>
+                     <table class="detailTable" style="word-break:break-word;">
+                        <tr class="tableHead">
+                           <td class="elementTitle" style="width:17%;">Roller</td>
+                           <td class="elementTitle">Organisation</td>
+                           <td class="elementTitle">Namn</td>
+                           <td class="elementTitle">E-Post</td>
+                           <td class="elementTitle">Telefon</td>
+                        </tr>
+                        <tr class="tableContent" style="display:none;" id="resourceContactsList1">
+                           <td>
+                              Ansvarig organisation
+                              <script type="text/javascript">
+                                        var resourceType = 'dataset';
+                                        var keywords = 'LST Verksamhetsdata';
+                                        var role = 'owner'
+                                        var id = 'resourceContactsList1'
+                                        displaySection_AllMetadata('ResourceContact', resourceType,keywords,role,id);
+                                    </script></td>
+                           <td>Vattenmyndigheterna</td>
+                           <td></td>
+                           <td>vattenmyndigheten.geodata@lansstyrelsen.se</td>
+                           <td></td>
+                        </tr>
+                        <tr class="tableContent" style="display:none;" id="resourceContactsList2">
+                           <td>
+                              Organisatorisk tillhörighet
+                              <script type="text/javascript">
+                                        var resourceType = 'dataset';
+                                        var keywords = 'LST Verksamhetsdata';
+                                        var role = 'pointOfContact'
+                                        var id = 'resourceContactsList2'
+                                        displaySection_AllMetadata('ResourceContact', resourceType,keywords,role,id);
+                                    </script></td>
+                           <td>LST Vattenmyndigheterna</td>
+                           <td></td>
+                           <td>vattenmyndigheten.geodata@lansstyrelsen.se</td>
+                           <td></td>
+                        </tr>
+                     </table>
+                  </div>
+               </div></a><a id="Geometri" class="subTabLinks">
+               <div id="InfoUtstrackning" class="InfoMetadata LST_V LST_N application document underlag webpage software grpLyr service series" style="display:none;"><br></br><p id="divTitle"> Utsträckning </p>
+                  <hr></hr>
+                  <div class="LST_V LST_N application document underlag webpage software grpLyr service series" style="display:none;">
+                     <table class="infoData">
+                        <tr>
+                           <td colspan="6" class="elementTitle"> Geografisk utsträckning </td>
+                        </tr>
+                     </table>
+                     <table class="detailTable">
+                        <tr class="tableHead" style="word-break:break-word;">
+                           <td class="elementTitle" style="width:25%;">Identifierare för geografisk utsträckning</td>
+                           <td class="elementTitle">Västligaste longitud</td>
+                           <td class="elementTitle">Ostligaste longitud</td>
+                           <td class="elementTitle">Sydligaste latitud</td>
+                           <td class="elementTitle">Nordligaste latitud</td>
+                        </tr>
+                        <tr class="tableContent" style="vertical-align:top;">
+                           <td>GeodataKälla:Datamängdens analyserade utsträckning</td>
+                           <td>10.88055</td>
+                           <td>24.17767</td>
+                           <td>55.31259</td>
+                           <td>65.91151</td>
+                        </tr>
+                     </table>
+                  </div>
+                  <table id="temporalTable" class="LST_V LST_N document underlag grpLyr service series" style="min-width:920px; max-width:920px; margin-left: 2%; margin-top: 10px; display:none;">
+                     <tr>
+                        <td class="elementTitle" colspan="2"> Temporal utsträckning: </td>
+                     </tr>
+                     <tr>
+                        <td class="elementTitle" style="padding-left:75px;"> Från tidpunkt: </td>
+                        <td><label></label></td>
+                     </tr>
+                     <tr>
+                        <td class="elementTitle" style="padding-left:75px;"> Till tidpunkt: </td>
+                        <td><label></label></td>
+                     </tr>
+                  </table>
+                  <table class="infoData LST_V LST_N grpLyr service series" style="margin-top:6px; display:none;">
+                     <tr>
+                        <td class="elementTitle" style="width: 227px;"> Vertikal utsträckning: </td>
+                        <td><label></label></td>
+                     </tr>
+                  </table>
+               </div></a><a id="Restriktioner" class="subTabLinks">
+               <div id="InfoRestriktioner" class="InfoMetadata LST_V LST_E LST_N document application webpage software grpLyr service series" style="display:none;">
+                  <div id="InfoRestriktioner_1"><br></br><p id="divTitle"> Restriktioner </p>
+                     <hr></hr>
+                     <table class="infoData">
+                        <tr>
+                           <td class="elementTitle" style="vertical-align:top;">Användningsretriktioner</td>
+                           <td><label><pre id="prew1518aac19b1c19b11">
+              Creative Commons universell (CC0 1.0)
+
+Public domain-dedikation: INGEN UPPHOVSRÄTT:
+
+Du får kopiera modifiera distribuera och framföra verket även i kommersiellt syfte utan att fråga om lov. Se mer information nedan.
+
+Kortfattad beskrivning: https://creativecommons.org/publicdomain/zero/1.0/deed.sv
+
+Full licenstext: https://creativecommons.org/publicdomain/zero/1.0/legalcode.sv
+            </pre><script type="text/javascript">                                                            
+							fix2('prew1518aac19b1c19b11','restrictionAllMetadataTabId');
+							insertLink();
+						</script></label></td>
+                        </tr>
+                        <tr>
+                           <td class="elementTitle" style="vertical-align:top;">Åtkomstrestriktioner</td>
+                           <td><label><pre id="prew1518aac19b1c17b11">
+              inga tillämpliga villkor
+            </pre><script type="text/javascript">                                                            
+							fix2('prew1518aac19b1c17b11','restrictionAllMetadataTabId');
+							insertLink();
+						</script></label></td>
+                        </tr>
+                        <tr>
+                           <td class="elementTitle" style="vertical-align:top;">
+                              							Användbarhetsbegränsningar: 
+                           </td>
+                           <td><label></label></td>
+                        </tr>
+                        <tr>
+                           <td class="elementTitle" style="vertical-align:top;">
+                              							Innehåller personuppgifter : 
+                           </td>
+                           <td><label>Nej</label></td>
+                        </tr>
+                        <tr>
+                           <td class="elementTitle" style="vertical-align:top;">
+                              							Personuppgifter : 
+                           </td>
+                           <td><label></label></td>
+                        </tr>
+                     </table>
+                  </div>
+               </div><script type="text/javascript">                
+                setLinkClickable('InfoRestriktioner_1');
+            </script></a><a id="Underhall" class="subTabLinks">
+               <div id="InfoUnderhall" class="InfoMetadata LST_V LST_N grpLyr service series" style="display:none;"><br></br><p id="divTitle"> Underhåll </p>
+                  <hr></hr>
+                  <table class="infoData">
+                     <tr>
+                        <td class="elementTitle"> Underhållsfrekvens: </td>
+                        <td><label>ej
+                              planerat</label></td>
+                     </tr>
+                     <tr>
+                        <td class="elementTitle" style="vertical-align:Top;"> Anmärkning: </td>
+                        <td><label></label></td>
+                     </tr>
+                  </table>
+               </div></a><a id="Resursstatus" class="subTabLinks">
+               <div id="InfoResursstatus" class="InfoMetadata LST_V LST_A LST_E LST_N application document underlag webpage software grpLyr service series" style="display:none;"><br></br><p id="divTitle"> Förvaltningsstatus </p>
+                  <hr></hr>
+                  <table class="infoData">
+                     <tr class="LST_V LST_A LST_E LST_N application document underlag webpage software grpLyr service series" style="display:none;">
+                        <td class="elementTitle"> Förvaltningsstatus: </td>
+                        <td><label>Aktuell</label></td>
+                     </tr>
+                     <tr class="LST_V LST_A LST_E LST_N application document underlag webpage software grpLyr service series" style="display:none;">
+                        <td class="elementTitle" style="vertical-align:Top;"> Statuskommentar: </td>
+                        <td><label></label></td>
+                     </tr>
+                     <tr class="LST_V LST_A LST_E LST_N application document underlag webpage software grpLyr service series" style="display:none;">
+                        <td class="elementTitle"> Granskningsdatum: </td>
+                        <td><label>2021-01-28</label></td>
+                     </tr>
+                     <tr class="LST_V LST_A LST_E LST_N application document underlag webpage software grpLyr service series" style="display:none;">
+                        <td class="elementTitle"> Granskningsfrekvens: </td>
+                        <td><label>Årligen</label></td>
+                     </tr>
+                     <tr class="LST_V LST_A LST_E LST_N underlag document application webpage software grpLyr service series" style="display:none;">
+                        <td class="elementTitle"> Nästa granskningsdatum: </td>
+                        <td><label>2022-01-28</label></td>
+                     </tr>
+                  </table>
+               </div></a><a id="Beskrivning" class="subTabLinks">
+               <div id="InfoBeskrivning" class="InfoMetadata infoData LST_V LST_N grpLyr service series" style="display:none;"><br></br><p id="divTitleDynamic"> Beskrivning av datamängd </p>
+                  <hr></hr>
+                  <table class="infoData">
+                     <tr class="service" style="display:none;">
+                        <td class="elementTitle"> Typ av tjänst: </td>
+                        <td></td>
+                     </tr>
+                     <tr class="LST_V LST_N grpLyr series" style="display:none;">
+                        <td class="elementTitle"> Rumslig representation: </td>
+                        <td><label>vektor</label></td>
+                     </tr>
+                     <tr class="LST_N" style="display:none;">
+                        <td class="elementTitle"> Avstånd mellan observationer: </td>
+                        <td><label></label></td>
+                     </tr>
+                     <tr class="LST_V grpLyr series" style="display:none;">
+                        <td class="elementTitle"> Geometrityp: </td>
+                        <td><label>Surface</label></td>
+                     </tr>
+                     <tr class="LST_V LST_N grpLyr series" style="display:none;">
+                        <td class="elementTitle"> Skala: </td>
+                        <td><label>250000</label></td>
+                     </tr>
+                     <tr class="LST_N" style="display:none;">
+                        <td class="elementTitle"> Språk i resurs: </td>
+                        <td><label>Svenska</label></td>
+                     </tr>
+                  </table>
+               </div></a><a id="aggregation" class="subTabLinks">
+               <div id="Infoaggregation" class="LST_V LST_A LST_N application document underlag webpage software grpLyr service series" style="display:none;"><br></br><p id="divTitle"> Relaterad information </p>
+                  <hr></hr>
+                  <table class="aggregationTypeTable" id="aggregationTypeTable">
+                     <tr class="tableHead">
+                        <td class="elementTitle">Relaterad resurs</td>
+                        <td class="elementTitle">Alternativt namn</td>
+                        <td class="elementTitle">Har relation</td>
+                     </tr>
+                  </table>
+               </div></a><a id="Kvalitet" class="subTabLinks">
+               <div id="InfoKvalitet" class="InfoMetadata LST_V LST_A LST_E LST_N underlag document application webpage software grpLyr service series" style="display:none;"><br></br><p id="divTitle"> Kvalitet </p>
+                  <hr></hr>
+                  <table class="infoData">
+                     <tr class="LST_V LST_N grpLyr service series" style="display:none;">
+                        <td class="elementTitle"> Omfattning: </td>
+                        <td><label>Datamängd</label></td>
+                     </tr>
+                     <tr class="LST_V LST_A LST_E LST_N underlag document application webpage software grpLyr service series" style="display:none;">
+                        <td class="elementTitle" style="vertical-align:Top;"> Tillkomsthistorik: </td>
+                        <td><label><pre id="prew1518a1">Skapat av SMHI efter riktlinjer från Havs- och Vattenmyndigheten.</pre><script type="text/javascript">
+                                    fix2('prew1518a1','lineageDiv');
+									setLinkClickable('lineageDiv');
+                                </script></label></td>
+                     </tr>
+                  </table>
+                  <div class="LST_V LST_A LST_E LST_N grpLyr service series" style="display:none;"></div>
+                  <table class="infoData LST_N" style="display:none;">
+                     <tr>
+                        <td colspan="6" class="elementTitle"> Kvalitetsrapport: </td>
+                     </tr>
+                  </table>
+                  <table class="detailTable LST_N" style="display:none;">
+                     <tr class="tableHead" style="word-break:break-word;">
+                        <td class="elementTitle" style="width:25%;">Rapporttyp</td>
+                        <td class="elementTitle" style="width:25%;">Titel på specifikation</td>
+                        <td class="elementTitle" style="width:25%;">Förklaring</td>
+                        <td class="elementTitle" style="width:25%;">Överensstämmelse</td>
+                     </tr>
+                     <tr class="emptyContent">
+                        <td colspan="4"></td>
+                     </tr>
+                  </table>
+               </div></a><a id="Referenssystem" class="subTabLinks">
+               <div id="InfoRefSystem" class="InfoMetadata LST_V LST_N grpLyr service series" style="display:none;"><br></br><p id="divTitle"> Referenssystem </p>
+                  <hr></hr>
+                  <table class="detailTable" style="width:50%;">
+                     <tr class="tableHead">
+                        <td class="elementTitle">Rumsligt referenssystem</td>
+                        <td class="elementTitle">Namnrymd</td>
+                     </tr>
+                     <tr class="tableContent">
+                        <td>http://www.opengis.net/def/crs/EPSG/0/3006</td>
+                        <td></td>
+                     </tr>
+                  </table>
+               </div></a><a id="Distributor" class="subTabLinks">
+               <div id="InfoDistributor" class="InfoMetadata LST_V LST_N grpLyr document application webpage software service series" style="display:none;"><br></br><p id="divTitle"> Åtkomst </p>
+                  <hr></hr>
+                  <table class="infoData LST_V LST_N underlag document application webpage software grpLyr service series" style="display:none;">
+                     <tr>
+                        <td colspan="2" class="elementTitle"> Distributör </td>
+                     </tr>
+                  </table>
+                  <table class="detailTable LST_V LST_N underlag document application webpage software grpLyr service series" style="display:none;">
+                     <tr class="tableHead">
+                        <td class="elementTitle">Organisation</td>
+                        <td class="elementTitle">E-post</td>
+                        <td class="elementTitle">Ansvarsområde</td>
+                     </tr>
+                     <tr class="tableContent">
+                        <td>Länsstyrelsen</td>
+                        <td></td>
+                        <td>
+                           Distributör
+                           
+                        </td>
+                     </tr>
+                  </table>
+                  <div class="LST_V LST_N grpLyr document application webpage software service series" style="display:none;">
+                     <table class="infoData" style="margin-left:5%;width:96.6%;">
+                        <tr>
+                           <td colspan="2" class="elementTitle"> Format </td>
+                        </tr>
+                     </table>
+                     <table class="detailTable" style="margin-left:5%;width:96.6%;">
+                        <tr class="tableHead">
+                           <td class="elementTitle">Formatnamn</td>
+                           <td class="elementTitle">Version på format</td>
+                        </tr>
+                        <tr class="tableContent">
+                           <td>SDE Feature Class</td>
+                           <td>10.3</td>
+                        </tr>
+                     </table>
+                  </div>
+                  <div class="LST_V LST_N underlag document application webpage software grpLyr service series" style="display:none;">
+                     <div id="onlineLinksSec1">
+                        <table class="infoData" style="margin-left:5%;width:96.6%;">
+                           <tr>
+                              <td colspan="3" class="elementTitle"> Onlinekällor </td>
+                           </tr>
+                        </table>
+                        <table class="detailTable" style="margin-left:5%;width:96.6%;">
+                           <tr class="tableHead">
+                              <td class="elementTitle">Onlinekälla</td>
+                              <td class="elementTitle">Protokoll</td>
+                              <td class="elementTitle">Beskrivning av webbplats </td>
+                              <td class="elementTitle">Namn på webbplats</td>
+                           </tr>
+                           <tr class="tableContent" style="vertical-align:top;">
+                              <td><a class="dynamicLink" target="_blank" href="https://www.vattenmyndigheterna.se/vattenforvaltning/tillstandet-i-vattnet.html">https://www.vattenmyndigheterna.se/vattenforvaltning/tillstandet-i-vattnet.html</a></td>
+                              <td>HTTP:Information</td>
+                              <td>Vattenmyndighetens webbsida</td>
+                              <td>Vattenmyndighetens webbsida</td>
+                           </tr>
+                           <tr class="tableContent" style="vertical-align:top;">
+                              <td><a class="dynamicLink" onClick="                                                                  &#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;openAtomView('https://ext-dokument.lansstyrelsen.se/gemensamt/geodata/ATOM/ATOM_vm.Kustvatten_Vattenforekomster_2016_1.xml');&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;">https://ext-dokument.lansstyrelsen.se/gemensamt/geodata/ATOM/ATOM_vm.Kustvatten_Vattenforekomster_2016_1.xml</a></td>
+                              <td>HTTP:Nedladdning:Atom</td>
+                              <td>Atom-fil</td>
+                              <td>Atom-fil</td>
+                           </tr>
+                        </table>
+                     </div>
+                  </div>
+               </div></a><a id="ObjectType" class="subTabLinks">
+               <div id="InfoFeatureCatalog" class="InfoMetadata"><br></br><p id="divTitle"> Objekttypskatalog </p>
+                  <hr></hr>
+                  <div id="resourceContacts">
+                     <table class="infoData" style="margin-top:10px;">
+                        <tr>
+                           <td colspan="5" class="elementTitle"> Objekttypskatalog </td>
+                        </tr>
+                     </table>
+                     <table class="detailTable" style="word-break:break-word;">
+                        <tr class="tableHead">
+                           <td class="elementTitle" style="width:12%">Kolumn</td>
+                           <td class="elementTitle" style="width:12%">Namn</td>
+                           <td class="elementTitle" style="width:16%">Definition</td>
+                           <td class="elementTitle" style="width:16%">Kommentar</td>
+                           <td class="elementTitle" style="width:8%">Datatyp</td>
+                           <td class="elementTitle" style="width:8%">Domäntyp</td>
+                           <td class="elementTitle" style="width:8%">Domän</td>
+                           <td class="elementTitle">Prioriterad</td>
+                        </tr>
+                        <tr class="tableContent">
+                           <td style="vertical-align:top">Shape</td>
+                           <td style="vertical-align:top">Objektgeometri</td>
+                           <td style="vertical-align:top">Anger vilken geometri ett objekt har. En shapefil kan inte blanda objektsgeomterier.
+                              Detta autogenereras vid skapandet av shapefilen.
+                           </td>
+                           <td style="vertical-align:top"><pre id="prew1518aac25b1b1b1b11">BESKRIVNING: Uträknad längd eller omkrets av ett objekt beroende på geometri. Räknas automatiskt fram i en geodatabas.
+EXEMPEL: 53264,2135
+ATTRIBUTTYP: Autogenererat
+KOMMENTAR: Anges i enheten som gäller för koordinatsystemet, vilket för RT90 och SWEREF är meter. Längd för polylinjer och omkrets för polygoner. Kan definieras som "Perimeter" i vissa fall.
+OBJEKTTYP: Element
+SÖKVÄG: Stodprocesser/Verksamhetsgis/GIS-sharepoint-listor/Lists/Geodataattribut
+FÄLTDEF: DOUBLE</pre><script type="text/javascript">
+										fix2('prew1518aac25b1b1b1b11','commentDiv1');
+										setLinkClickable('commentDiv1') 
+									</script></td>
+                           <td style="vertical-align:top">STRING</td>
+                           <td style="vertical-align:top">Element</td>
+                           <td style="vertical-align:top">Stodprocesser/Verksamhetsgis/GIS-sharepoint-listor/Lists/Geodataattribut</td>
+                           <td style="vertical-align:top"></td>
+                        </tr>
+                        <tr class="tableContent">
+                           <td style="vertical-align:top">URL_VISS</td>
+                           <td style="vertical-align:top"></td>
+                           <td style="vertical-align:top"></td>
+                           <td style="vertical-align:top"><pre id="prew1518aac25b1b1b1b32">BESKRIVNING: Uträknad area för polygoner, vilket sker per automatik i en geodatabas.
+EXEMPEL: 2356482,4253
+ATTRIBUTTYP: Autogenererat
+KOMMENTAR: Arean specificeras i den enhet som koordinatsystemet använder sig av. I RT90 och SWEREF så är det i meter och sådeles kvadratmeter.
+OBJEKTTYP: Element
+SÖKVÄG: Stodprocesser/Verksamhetsgis/GIS-sharepoint-listor/Lists/Geodataattribut
+FÄLTDEF: DOUBLE</pre><script type="text/javascript">
+										fix2('prew1518aac25b1b1b1b32','commentDiv1');
+										setLinkClickable('commentDiv1') 
+									</script></td>
+                           <td style="vertical-align:top">String[90]</td>
+                           <td style="vertical-align:top"></td>
+                           <td style="vertical-align:top"></td>
+                           <td style="vertical-align:top"></td>
+                        </tr>
+                        <tr class="tableContent">
+                           <td style="vertical-align:top">ObjVer</td>
+                           <td style="vertical-align:top"></td>
+                           <td style="vertical-align:top"></td>
+                           <td style="vertical-align:top"><pre id="prew1518aac25b1b1b1b53"></pre><script type="text/javascript">
+										fix2('prew1518aac25b1b1b1b53','commentDiv1');
+										setLinkClickable('commentDiv1') 
+									</script></td>
+                           <td style="vertical-align:top">String[50]</td>
+                           <td style="vertical-align:top"></td>
+                           <td style="vertical-align:top"></td>
+                           <td style="vertical-align:top"></td>
+                        </tr>
+                        <tr class="tableContent">
+                           <td style="vertical-align:top">Shape.area</td>
+                           <td style="vertical-align:top">Objektsarea</td>
+                           <td style="vertical-align:top">Uträknad area för polygoner, vilket sker per automatik i en geodatabas.</td>
+                           <td style="vertical-align:top"><pre id="prew1518aac25b1b1b1b74">BESKRIVNING: Objektets egennamn
+EXEMPEL: Dumme mosse, Linköpings stadskärna
+ATTRIBUTTYP: Identifierare
+KOMMENTAR: Egennamn på objektsnivå, tex naturreservatet eller riksintresse.
+OBJEKTTYP: Element
+SÖKVÄG: Stodprocesser/Verksamhetsgis/GIS-sharepoint-listor/Lists/Geodataattribut
+FÄLTDEF: STRING (70)</pre><script type="text/javascript">
+										fix2('prew1518aac25b1b1b1b74','commentDiv1');
+										setLinkClickable('commentDiv1') 
+									</script></td>
+                           <td style="vertical-align:top">DOUBLE</td>
+                           <td style="vertical-align:top">Element</td>
+                           <td style="vertical-align:top">Stodprocesser/Verksamhetsgis/GIS-sharepoint-listor/Lists/Geodataattribut</td>
+                           <td style="vertical-align:top"></td>
+                        </tr>
+                        <tr class="tableContent">
+                           <td style="vertical-align:top">GVatten</td>
+                           <td style="vertical-align:top"></td>
+                           <td style="vertical-align:top"></td>
+                           <td style="vertical-align:top"><pre id="prew1518aac25b1b1b1b95"></pre><script type="text/javascript">
+										fix2('prew1518aac25b1b1b1b95','commentDiv1');
+										setLinkClickable('commentDiv1') 
+									</script></td>
+                           <td style="vertical-align:top">String[1]</td>
+                           <td style="vertical-align:top"></td>
+                           <td style="vertical-align:top"></td>
+                           <td style="vertical-align:top"></td>
+                        </tr>
+                        <tr class="tableContent">
+                           <td style="vertical-align:top">UTL_EU_CD</td>
+                           <td style="vertical-align:top"></td>
+                           <td style="vertical-align:top"></td>
+                           <td style="vertical-align:top"><pre id="prew1518aac25b1b1b1c116"></pre><script type="text/javascript">
+										fix2('prew1518aac25b1b1b1c116','commentDiv1');
+										setLinkClickable('commentDiv1') 
+									</script></td>
+                           <td style="vertical-align:top">String[50]</td>
+                           <td style="vertical-align:top"></td>
+                           <td style="vertical-align:top"></td>
+                           <td style="vertical-align:top"></td>
+                        </tr>
+                        <tr class="tableContent">
+                           <td style="vertical-align:top">UTL_MS_CD</td>
+                           <td style="vertical-align:top"></td>
+                           <td style="vertical-align:top"></td>
+                           <td style="vertical-align:top"><pre id="prew1518aac25b1b1b1c137"></pre><script type="text/javascript">
+										fix2('prew1518aac25b1b1b1c137','commentDiv1');
+										setLinkClickable('commentDiv1') 
+									</script></td>
+                           <td style="vertical-align:top">String[50]</td>
+                           <td style="vertical-align:top"></td>
+                           <td style="vertical-align:top"></td>
+                           <td style="vertical-align:top"></td>
+                        </tr>
+                        <tr class="tableContent">
+                           <td style="vertical-align:top">Shape.len</td>
+                           <td style="vertical-align:top">Objektslängd</td>
+                           <td style="vertical-align:top">Uträknad längd eller omkrets av ett objekt beroende på geometri. Räknas automatiskt
+                              fram i en geodatabas.
+                           </td>
+                           <td style="vertical-align:top"><pre id="prew1518aac25b1b1b1c158">BESKRIVNING: Uträknad längd eller omkrets av ett objekt beroende på geometri. Räknas automatiskt fram i en geodatabas.
+EXEMPEL: 53264,2135
+ATTRIBUTTYP: Autogenererat
+KOMMENTAR: Anges i enheten som gäller för koordinatsystemet, vilket för RT90 och SWEREF är meter. Längd för polylinjer och omkrets för polygoner. Kan definieras som "Perimeter" i vissa fall.
+OBJEKTTYP: Element
+SÖKVÄG: Stodprocesser/Verksamhetsgis/GIS-sharepoint-listor/Lists/Geodataattribut
+FÄLTDEF: DOUBLE</pre><script type="text/javascript">
+										fix2('prew1518aac25b1b1b1c158','commentDiv1');
+										setLinkClickable('commentDiv1') 
+									</script></td>
+                           <td style="vertical-align:top">DOUBLE</td>
+                           <td style="vertical-align:top">Element</td>
+                           <td style="vertical-align:top">Stodprocesser/Verksamhetsgis/GIS-sharepoint-listor/Lists/Geodataattribut</td>
+                           <td style="vertical-align:top"></td>
+                        </tr>
+                        <tr class="tableContent">
+                           <td style="vertical-align:top">NAMN</td>
+                           <td style="vertical-align:top">Objektsnamn</td>
+                           <td style="vertical-align:top">Objektets egennamn</td>
+                           <td style="vertical-align:top"><pre id="prew1518aac25b1b1b1c179">BESKRIVNING: Objektets egennamn
+EXEMPEL: Dumme mosse, Linköpings stadskärna
+ATTRIBUTTYP: Identifierare
+KOMMENTAR: Egennamn på objektsnivå, tex naturreservatet eller riksintresse.
+OBJEKTTYP: Element
+SÖKVÄG: Stodprocesser/Verksamhetsgis/GIS-sharepoint-listor/Lists/Geodataattribut
+FÄLTDEF: STRING (70)</pre><script type="text/javascript">
+										fix2('prew1518aac25b1b1b1c179','commentDiv1');
+										setLinkClickable('commentDiv1') 
+									</script></td>
+                           <td style="vertical-align:top">STRING (70)</td>
+                           <td style="vertical-align:top">Element</td>
+                           <td style="vertical-align:top">Stodprocesser/Verksamhetsgis/GIS-sharepoint-listor/Lists/Geodataattribut</td>
+                           <td style="vertical-align:top"></td>
+                        </tr>
+                        <tr class="tableContent">
+                           <td style="vertical-align:top">OBJECTID</td>
+                           <td style="vertical-align:top"></td>
+                           <td style="vertical-align:top"></td>
+                           <td style="vertical-align:top"><pre id="prew1518aac25b1b1b1c1910"></pre><script type="text/javascript">
+										fix2('prew1518aac25b1b1b1c1910','commentDiv1');
+										setLinkClickable('commentDiv1') 
+									</script></td>
+                           <td style="vertical-align:top">OID</td>
+                           <td style="vertical-align:top"></td>
+                           <td style="vertical-align:top"></td>
+                           <td style="vertical-align:top"></td>
+                        </tr>
+                        <tr class="tableContent">
+                           <td style="vertical-align:top">UUID</td>
+                           <td style="vertical-align:top"></td>
+                           <td style="vertical-align:top"></td>
+                           <td style="vertical-align:top"><pre id="prew1518aac25b1b1b1c2111"></pre><script type="text/javascript">
+										fix2('prew1518aac25b1b1b1c2111','commentDiv1');
+										setLinkClickable('commentDiv1') 
+									</script></td>
+                           <td style="vertical-align:top">String[50]</td>
+                           <td style="vertical-align:top"></td>
+                           <td style="vertical-align:top"></td>
+                           <td style="vertical-align:top"></td>
+                        </tr>
+                        <tr class="tableContent">
+                           <td style="vertical-align:top">TYP_NFS06</td>
+                           <td style="vertical-align:top"></td>
+                           <td style="vertical-align:top"></td>
+                           <td style="vertical-align:top"><pre id="prew1518aac25b1b1b1c2312"></pre><script type="text/javascript">
+										fix2('prew1518aac25b1b1b1c2312','commentDiv1');
+										setLinkClickable('commentDiv1') 
+									</script></td>
+                           <td style="vertical-align:top">Integer</td>
+                           <td style="vertical-align:top"></td>
+                           <td style="vertical-align:top"></td>
+                           <td style="vertical-align:top"></td>
+                        </tr>
+                        <tr class="tableContent">
+                           <td style="vertical-align:top">MS_CD</td>
+                           <td style="vertical-align:top"></td>
+                           <td style="vertical-align:top"></td>
+                           <td style="vertical-align:top"><pre id="prew1518aac25b1b1b1c2513"></pre><script type="text/javascript">
+										fix2('prew1518aac25b1b1b1c2513','commentDiv1');
+										setLinkClickable('commentDiv1') 
+									</script></td>
+                           <td style="vertical-align:top">String[20]</td>
+                           <td style="vertical-align:top"></td>
+                           <td style="vertical-align:top"></td>
+                           <td style="vertical-align:top"></td>
+                        </tr>
+                        <tr class="tableContent">
+                           <td style="vertical-align:top">EU_CD</td>
+                           <td style="vertical-align:top"></td>
+                           <td style="vertical-align:top"></td>
+                           <td style="vertical-align:top"><pre id="prew1518aac25b1b1b1c2714"></pre><script type="text/javascript">
+										fix2('prew1518aac25b1b1b1c2714','commentDiv1');
+										setLinkClickable('commentDiv1') 
+									</script></td>
+                           <td style="vertical-align:top">String[17]</td>
+                           <td style="vertical-align:top"></td>
+                           <td style="vertical-align:top"></td>
+                           <td style="vertical-align:top"></td>
+                        </tr>
+                        <tr class="tableContent">
+                           <td style="vertical-align:top">VISS_MS_CD</td>
+                           <td style="vertical-align:top"></td>
+                           <td style="vertical-align:top"></td>
+                           <td style="vertical-align:top"><pre id="prew1518aac25b1b1b1c2915"></pre><script type="text/javascript">
+										fix2('prew1518aac25b1b1b1c2915','commentDiv1');
+										setLinkClickable('commentDiv1') 
+									</script></td>
+                           <td style="vertical-align:top">String[15]</td>
+                           <td style="vertical-align:top"></td>
+                           <td style="vertical-align:top"></td>
+                           <td style="vertical-align:top"></td>
+                        </tr>
+                        <tr class="tableContent">
+                           <td style="vertical-align:top">TYPOMRKUST</td>
+                           <td style="vertical-align:top"></td>
+                           <td style="vertical-align:top"></td>
+                           <td style="vertical-align:top"><pre id="prew1518aac25b1b1b1c3116"></pre><script type="text/javascript">
+										fix2('prew1518aac25b1b1b1c3116','commentDiv1');
+										setLinkClickable('commentDiv1') 
+									</script></td>
+                           <td style="vertical-align:top">String[5]</td>
+                           <td style="vertical-align:top"></td>
+                           <td style="vertical-align:top"></td>
+                           <td style="vertical-align:top"></td>
+                        </tr>
+                        <tr class="tableContent">
+                           <td style="vertical-align:top">CATEGORY</td>
+                           <td style="vertical-align:top"></td>
+                           <td style="vertical-align:top"></td>
+                           <td style="vertical-align:top"><pre id="prew1518aac25b1b1b1c3317"></pre><script type="text/javascript">
+										fix2('prew1518aac25b1b1b1c3317','commentDiv1');
+										setLinkClickable('commentDiv1') 
+									</script></td>
+                           <td style="vertical-align:top">String[50]</td>
+                           <td style="vertical-align:top"></td>
+                           <td style="vertical-align:top"></td>
+                           <td style="vertical-align:top"></td>
+                        </tr>
+                        <tr class="tableContent">
+                           <td style="vertical-align:top">WB</td>
+                           <td style="vertical-align:top"></td>
+                           <td style="vertical-align:top"></td>
+                           <td style="vertical-align:top"><pre id="prew1518aac25b1b1b1c3518"></pre><script type="text/javascript">
+										fix2('prew1518aac25b1b1b1c3518','commentDiv1');
+										setLinkClickable('commentDiv1') 
+									</script></td>
+                           <td style="vertical-align:top">String[50]</td>
+                           <td style="vertical-align:top"></td>
+                           <td style="vertical-align:top"></td>
+                           <td style="vertical-align:top"></td>
+                        </tr>
+                        <tr class="tableContent">
+                           <td style="vertical-align:top">District</td>
+                           <td style="vertical-align:top"></td>
+                           <td style="vertical-align:top"></td>
+                           <td style="vertical-align:top"><pre id="prew1518aac25b1b1b1c3719"></pre><script type="text/javascript">
+										fix2('prew1518aac25b1b1b1c3719','commentDiv1');
+										setLinkClickable('commentDiv1') 
+									</script></td>
+                           <td style="vertical-align:top">String[12]</td>
+                           <td style="vertical-align:top"></td>
+                           <td style="vertical-align:top"></td>
+                           <td style="vertical-align:top"></td>
+                        </tr>
+                        <tr class="tableContent">
+                           <td style="vertical-align:top">COMP_AUTH</td>
+                           <td style="vertical-align:top"></td>
+                           <td style="vertical-align:top"></td>
+                           <td style="vertical-align:top"><pre id="prew1518aac25b1b1b1c3920"></pre><script type="text/javascript">
+										fix2('prew1518aac25b1b1b1c3920','commentDiv1');
+										setLinkClickable('commentDiv1') 
+									</script></td>
+                           <td style="vertical-align:top">String[50]</td>
+                           <td style="vertical-align:top"></td>
+                           <td style="vertical-align:top"></td>
+                           <td style="vertical-align:top"></td>
+                        </tr>
+                        <tr class="tableContent">
+                           <td style="vertical-align:top">Country</td>
+                           <td style="vertical-align:top"></td>
+                           <td style="vertical-align:top"></td>
+                           <td style="vertical-align:top"><pre id="prew1518aac25b1b1b1c4121"></pre><script type="text/javascript">
+										fix2('prew1518aac25b1b1b1c4121','commentDiv1');
+										setLinkClickable('commentDiv1') 
+									</script></td>
+                           <td style="vertical-align:top">String[2]</td>
+                           <td style="vertical-align:top"></td>
+                           <td style="vertical-align:top"></td>
+                           <td style="vertical-align:top"></td>
+                        </tr>
+                        <tr class="tableContent">
+                           <td style="vertical-align:top">Version</td>
+                           <td style="vertical-align:top"></td>
+                           <td style="vertical-align:top"></td>
+                           <td style="vertical-align:top"><pre id="prew1518aac25b1b1b1c4322"></pre><script type="text/javascript">
+										fix2('prew1518aac25b1b1b1c4322','commentDiv1');
+										setLinkClickable('commentDiv1') 
+									</script></td>
+                           <td style="vertical-align:top">String[50]</td>
+                           <td style="vertical-align:top"></td>
+                           <td style="vertical-align:top"></td>
+                           <td style="vertical-align:top"></td>
+                        </tr>
+                     </table>
+                  </div>
+               </div></a><a id="Forvaltningsdok" class="subTabLinks">
+               <div id="InfoForvaltningsdoc" class="InfoMetadata LST_V LST_A LST_E LST_N application document underlag webpage software grpLyr service series MST_E" style="display:none;"><br></br><p id="divTitle"> Förvaltningsdokumentation </p>
+                  <hr></hr>
+                  <table class="infoData">
+                     <tr class="LST_V LST_N grpLyr service series" style="display:none;">
+                        <td colspan="2" class="elementTitle"> Förvaltningsdokumentation </td>
+                     </tr>
+                     <tr class="LST_V LST_N grpLyr service series" style="display:none;">
+                        <td class="elementTitle">
+                           Projektkatalogdokument: 
+                        </td>
+                        <td><label></label></td>
+                     </tr>
+                     <tr class="LST_V LST_N application document underlag webpage software grpLyr service series" style="display:none;">
+                        <td colspan="2" class="elementTitle"> Förvaltningsrutiner </td>
+                     </tr>
+                     <tr class="LST_V LST_N application document underlag webpage software grpLyr service series" style="display:none;">
+                        <td class="elementTitle" style="vertical-align:Top;padding-left:30px;">
+                           Ajourhållningsutiner: 
+                        </td>
+                        <td><label></label></td>
+                     </tr>
+                     <tr class="LST_V LST_N application document underlag webpage software grpLyr service series" style="display:none;">
+                        <td class="elementTitle" style="vertical-align:Top;padding-left:30px;">
+                           Förvaltningsrelaterat dokument: 
+                        </td>
+                        <td><label></label></td>
+                     </tr>
+                     <tr class="LST_V LST_N application document underlag webpage software grpLyr service series" style="display:none;">
+                        <td class="elementTitle" style="vertical-align:Top;padding-left:30px;"> Övriga
+                           rutinbeskrivningar: 
+                        </td>
+                        <td><label></label></td>
+                     </tr>
+                     <tr class="LST_V LST_A LST_E LST_N application document underlag webpage software grpLyr service series" style="display:none;">
+                        <td colspan="2" class="elementTitle"> Utvecklingsplanering </td>
+                     </tr>
+                     <tr class="LST_V LST_A LST_E LST_N application document underlag webpage software grpLyr service series" style="display:none;">
+                        <td class="elementTitle" style="vertical-align:Top;padding-left:30px;">
+                           Åtgärdsbehov: 
+                        </td>
+                        <td><label></label></td>
+                     </tr>
+                     <tr class="LST_V LST_A LST_E LST_N application document underlag webpage software grpLyr service series" style="display:none;">
+                        <td class="elementTitle" style="vertical-align:Top;padding-left:30px;">
+                           Utvecklingsideer: 
+                        </td>
+                        <td><label></label></td>
+                     </tr>
+                     <tr class="LST_V LST_A LST_E LST_N application document underlag webpage software grpLyr service series" style="display:none;">
+                        <td class="elementTitle" style="vertical-align:Top;padding-left:30px;">
+                           Utvecklingsdokument: 
+                        </td>
+                        <td><label></label></td>
+                     </tr>
+                     <tr class="LST_V series" style="display:none;">
+                        <td class="elementTitle" style="vertical-align:Top;padding-left:30px;">
+                           Åtgärdsplan: 
+                        </td>
+                        <td><label></label></td>
+                     </tr>
+                     <tr class=" LST_N underlag document application webpage software grpLyr service" style="display:none;">
+                        <td colspan="2" class="elementTitle"> Harmonisering </td>
+                     </tr>
+                     <tr class="other" style="display:none;">
+                        <td class="elementTitle" style="vertical-align:Top;padding-left:30px;">
+                           Harmoniseringsgrad: 
+                        </td>
+                        <td><label></label></td>
+                     </tr>
+                     <tr class="other" style="display:none;">
+                        <td class="elementTitle" style="vertical-align:Top;padding-left:30px;">
+                           Harmoniseringskommentar: 
+                        </td>
+                        <td><label></label></td>
+                     </tr>
+                     <tr class=" LST_N underlag document application webpage software grpLyr service" style="display:none;">
+                        <td class="elementTitle" style="vertical-align:Top;padding-left:30px;">
+                           Attributstandard: 
+                        </td>
+                        <td><label></label></td>
+                     </tr>
+                     <tr class="other" style="display:none;">
+                        <td class="elementTitle" style="vertical-align:Top;padding-left:30px;">
+                           Länk till attributstandard: 
+                        </td>
+                        <td><label></label></td>
+                     </tr>
+                  </table>
+               </div></a><a id="Info_om_Metadata" class="subTabLinks">
+               <div id="InfoMetadata" class="InfoMetadata LST_V LST_A LST_E LST_N application document underlag webpage software grpLyr service series" style="display:none;"><br></br><p id="divTitle"> Information om metadata </p>
+                  <hr></hr>
+                  <table class="infoData">
+                     <tr class="LST_V LST_N series" style="display:none;">
+                        <td class="elementTitle"> Identifierare för metadatamängden: </td>
+                        <td><label>ec8c278f-37a5-4fb3-971f-2920ab22609f</label></td>
+                     </tr>
+                     <div>
+                        <tr class="LST_V LST_A LST_E LST_N application document underlag webpage software series" style="display:none;">
+                           <td class="elementTitle"> Resurstyp: </td>
+                           <td><label>Datamängd</label></td>
+                        </tr>
+                        <tr class="LST_N" style="display:none;">
+                           <td class="elementTitle"> Språk i metadata: </td>
+                           <td><label>Svenska</label></td>
+                        </tr>
+                     </div>
+                  </table>
+                  <div class="LST_V LST_N grpLyr service series" style="display:none;">
+                     <table class="infoData">
+                        <tr>
+                           <td colspan="5" class="elementTitle"> Metadatakontakt </td>
+                        </tr>
+                     </table>
+                     <table class="detailTable">
+                        <tr class="tableHead">
+                           <td class="elementTitle">Namn</td>
+                           <td class="elementTitle">Organisationnamn</td>
+                           <td class="elementTitle">Ansvarsområde</td>
+                           <td class="elementTitle">Telefon</td>
+                           <td class="elementTitle">E-Post</td>
+                        </tr>
+                        <tr class="tableContent">
+                           <td></td>
+                           <td>LST Vattenmyndigheterna</td>
+                           <td>
+                              Organisatorisk tillhörighet
+                              
+                           </td>
+                           <td></td>
+                           <td>vattenmyndigheten.geodata@lansstyrelsen.se</td>
+                        </tr>
+                     </table>
+                  </div>
+                  <div class="LST_V LST_N grpLyr service series" style="display:none;">
+                     <table class="infoData" style="margin-top:6px;">
+                        <tr>
+                           <td class="elementTitle"> Granskningsdatum för metadata: </td>
+                           <td><label>2023-01-19T05:00:09</label></td>
+                        </tr>
+                     </table>
+                  </div>
+                  <table class="infoData LST_N" style="display:none;">
+                     <tr>
+                        <td class="elementTitle"> Metadatastandard: </td>
+                        <td><label>SS-EN-ISO-19115:2005-NMDP 4.0</label></td>
+                     </tr>
+                     <tr>
+                        <td class="elementTitle"> Version av metadatastandard: </td>
+                        <td><label>1.0</label></td>
+                     </tr>
+                  </table>
+               </div></a></div>
+      </div>
+   </body>
+</html>
