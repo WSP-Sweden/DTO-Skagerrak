@@ -35,7 +35,7 @@ All code can be run in the WEkEO Jupyter environment with the following steps:
 2. Create a custom conda environment using the YAML file provided in this repository (DTO_conda.yaml"). This environment can be used to run all notebooks provided in this repository. <br/>
   2a. open a terminal in your WEkEO JupyterHub <br/>
   2b. Use the YAML file included in this repo to create a new environment: <br/>
-        conda env create -f DTO_conda.yaml
+        &nbsp;&nbsp;&nbsp;&nbsp;conda env create -f DTO_conda.yaml
 3. Install the following packages via terminal in the "wekeolab" environment (more specific instructions are given at the beginning och each notebook):
    - xcube-cmems
    - bottleneck
