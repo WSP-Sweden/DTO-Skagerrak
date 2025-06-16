@@ -43,13 +43,10 @@ All code can be run in the WEkEO Jupyter environment with the following steps:
     - Refresh the webpage for the changes to take effect.<br/>
     - With a notebook open, select the newly created kernel "DTO_conda" in the upper right hand corner of the screen.<br/>
     - You are now ready to run the notebook!<br/>
-3. Install the following packages via terminal in the "wekeolab" environment (more specific instructions are given at the beginning och each notebook):
-   - xcube-cmems
-   - bottleneck
 3. Replace the "username" and "password" variables at the beginning of the notebook with your own credentials for Copernicus Marine
-4. Run the notebook using the "wekeolab" kernel
+4. Run the notebook, making sure to use your new "DTO_conda" kernel
 
-Alternatively, the DTO_Skagerrak_environment.txt can be used to build a custom environment either locally or on the WEkEO server workspace.
+Alternatively... (install all external packages into wekeolab kernel)
 
 As of 2025-07-01, code will not be maintained as the proof of concept funding does not cover updates. We hope to generate a user group that will fork the repository and maintain the code in other environments so that these tools can continue to be used!
 
