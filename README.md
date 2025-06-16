@@ -5,7 +5,7 @@ This repository includes the code generated during the pilot project “Havsplan
 
 The primary objective of the pilot is to demonstrate how open-access remote sensing data can be transformed into living, sensor-derived data products that are relevant for maritime planning. Specifically, the project has developed and tested three data products:
 
-### Euphotic Zone Delineation 
+### Euphotic Depth and Zone Delineation 
   - The Euphotic zone refers to the upper layer of the ocean where light can penetrate, allowing photosynthesis to occur. It is an important environmental zone as it reflects the seabed area available for 
     underwater vegetation, which is in turn an important factor in the health of many marine ecosystems
   - An investigation into the light properties of the underwater environment. Includes time series calculations of the depth of blue light penetration, areas where light is incident on the seafloor (and what     
