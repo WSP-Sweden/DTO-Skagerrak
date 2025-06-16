@@ -32,7 +32,7 @@ All code is provided in annotated tutorial Jupyter Notebooks which require very 
 
 All code can be run in the WEkEO Jupyter environment with the following steps:
 1. Once logged into WEkEO, spawn a remote server at the following location: https://jupyterhub.prod.wekeo2.eu/hub/spawn
-2. Create a custom conda environment using the YAML file provided in this repository (DTO_conda.yaml"). This environment can be used to run all notebooks provided in this repository. 
+2. Create a custom conda environment using the YAML file provided in this repository (DTO_conda.yaml"). This environment can be used to run all notebooks provided in this repository. <br/>
   a) asd 
 3. Install the following packages via terminal in the "wekeolab" environment (more specific instructions are given at the beginning och each notebook):
    - xcube-cmems
