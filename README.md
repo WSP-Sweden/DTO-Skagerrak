@@ -30,9 +30,11 @@ All code is provided in annotated tutorial Jupyter Notebooks which require very 
 1. WEkEO (https://wekeo.copernicus.eu/)
 2. Copernicus Marine Services (https://marine.copernicus.eu/)
 
+All notebooks provided can be downloaded directly from this GitHub repository and uploaded into the user's WEkEO JupyterHub workspace.
+
 All code can be run in the WEkEO Jupyter environment with the following steps:
 1. Once logged into WEkEO, spawn a remote server at the following location: https://jupyterhub.prod.wekeo2.eu/hub/spawn
-2. Create a custom conda environment using the YAML file provided in this repository (DTO_conda.yaml"). This environment can be used to run all notebooks provided in this repository. <br/>
+2. Create a custom conda environment using the YAML file provided in this repository (DTO_conda.yaml"). This environment can be used to run all notebooks provided in this repository. This new conda environment "DTO_conda" will persist in your WEkEO JupyterHub workspace, meaning that you will not need to spend time resinstalling extra libraries every time you restart a server instance:<br/>
     - Open a terminal in your WEkEO JupyterHub <br/>
     - Use the YAML file included in this repo to create a new environment: <br/>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;conda env create -f DTO_conda.yaml <br/>
@@ -46,7 +48,13 @@ All code can be run in the WEkEO Jupyter environment with the following steps:
 3. Replace the "username" and "password" variables at the beginning of the notebook with your own credentials for Copernicus Marine
 4. Run the notebook, making sure to use your new "DTO_conda" kernel
 
-Alternatively... (install all external packages into wekeolab kernel)
+Alternatively, you can use the preinstalled "wekeolab" conda environment and install a number of extra python packages. Note that if you choose this option you will need to reinstall these packages every time you restart your server instance:
+1. Open a terminal in your WEkEO JupyterHub.
+2. Activate the "wekeolab" conda environment: <br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;conda activate wekeolab <br/>
+3. Execute the following code:
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;conda install xcube xcube-cmems contextily hvplot seaborn bottleneck openeo xgboost optuna geoviews copernicusmarine -y <br/>
+4. Open the notebook you would like to run and select the "wekeolab" environment as your kernel
 
 As of 2025-07-01, code will not be maintained as the proof of concept funding does not cover updates. We hope to generate a user group that will fork the repository and maintain the code in other environments so that these tools can continue to be used!
 
