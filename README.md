@@ -51,7 +51,7 @@ Alternatively, you can use the preinstalled "wekeolab" conda environment and ins
 1. Open a terminal in your WEkEO JupyterHub.
 2. Activate the "wekeolab" conda environment: <br/>
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;conda activate wekeolab <br/>
-3. Execute the following code:
+3. Execute the following code: <br/>
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;conda install xcube xcube-cmems contextily hvplot seaborn bottleneck openeo xgboost optuna geoviews copernicusmarine -y <br/>
 4. Open the notebook you would like to run and select the "wekeolab" environment as your kernel
 
