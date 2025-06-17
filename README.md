@@ -29,8 +29,7 @@ Together, these data products comprise a Digital Twin Ocean prototype, which can
 All code is provided in annotated tutorial Jupyter Notebooks which require very little programming experience. All code can be used for further development in different projects. To run the code provided in this repository the user needs to create (free) accounts in 
 1. WEkEO (https://wekeo.copernicus.eu/)
 2. Copernicus Marine Services (https://marine.copernicus.eu/)
-
-All notebooks provided can be downloaded directly from this GitHub repository and uploaded into the user's WEkEO JupyterHub workspace.
+3. All notebooks provided can be downloaded directly from this GitHub repository and uploaded into the user's WEkEO JupyterHub workspace.
 
 All code can be run in the WEkEO Jupyter environment with the following steps:
 1. Once logged into WEkEO, spawn a remote server at the following location: https://jupyterhub.prod.wekeo2.eu/hub/spawn
