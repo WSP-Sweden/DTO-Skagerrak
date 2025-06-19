@@ -28,8 +28,8 @@ Together, these data products comprise a Digital Twin Ocean prototype, which can
 ## Code Usage
 All code is provided in annotated tutorial Jupyter Notebooks which require very little programming experience to investigate and run. All code can be used for further development in different projects. To run the code provided in this repository the user needs to complete the following steps:
 1. Create (free) accounts in:
-- WEkEO (https://wekeo.copernicus.eu/)
-- Copernicus Marine Services (https://marine.copernicus.eu/)
+    - WEkEO (https://wekeo.copernicus.eu/)
+    - Copernicus Marine Services (https://marine.copernicus.eu/)
 2. Start a WEkEO Workspace from the following web page after logging into your WEkEO account: https://wekeo.copernicus.eu/my-wekeo
 3. Choose to spawn either a "Machine Learning" or "Machine Learning (GPU)" server instance. Computing resources of the different server environments can be found here: https://help.wekeo.eu/en/articles/7945473-which-are-the-computing-resources-of-the-wekeo-jupyterhub?pk_vid=8f7b592cbc1701351750312755f9bc5b
 4. Download Jupyter notebooks and their associated "external_data" from this repository and load into your WEkEO workspace. These steps can also be managed through Git integration.
