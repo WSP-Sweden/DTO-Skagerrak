@@ -26,14 +26,17 @@ The primary objective of the pilot is to demonstrate how open-access remote sens
 Together, these data products comprise a Digital Twin Ocean prototype, which can be built upon and scaled to generate a full-scale DTO for marine planning purposes.
 
 ## Code Usage
-All code is provided in annotated tutorial Jupyter Notebooks which require very little programming experience. All code can be used for further development in different projects. To run the code provided in this repository the user needs to create (free) accounts in 
-1. WEkEO (https://wekeo.copernicus.eu/)
-2. Copernicus Marine Services (https://marine.copernicus.eu/)
-3. All notebooks provided can be downloaded directly from this GitHub repository and uploaded into the user's WEkEO JupyterHub workspace.
+All code is provided in annotated tutorial Jupyter Notebooks which require very little programming experience to investigate and run. All code can be used for further development in different projects. To run the code provided in this repository the user needs to complete the following steps:
+1. Create (free) accounts in:
+- WEkEO (https://wekeo.copernicus.eu/)
+- Copernicus Marine Services (https://marine.copernicus.eu/)
+2. Start a WEkEO Workspace from the following web page after logging into your WEkEO account: https://wekeo.copernicus.eu/my-wekeo
+3. Choose to spawn either a "Machine Learning" or "Machine Learning (GPU)" server instance. Computing resources of the different server environments can be found here: https://help.wekeo.eu/en/articles/7945473-which-are-the-computing-resources-of-the-wekeo-jupyterhub?pk_vid=8f7b592cbc1701351750312755f9bc5b
+4. Download Jupyter notebooks and their associated "external_data" from this repository and load into your WEkEO workspace. These steps can also be managed through Git integration.
+5. Complete the below steps to create the custom python environment required to run the notebooks included in this repository.
 
-All code can be run in the WEkEO Jupyter environment with the following steps:
-1. Once logged into WEkEO, spawn a remote server at the following location: https://jupyterhub.prod.wekeo2.eu/hub/spawn
-2. Create a custom conda environment using the YAML file provided in this repository (DTO_conda.yaml"). This environment can be used to run all notebooks provided in this repository. This new conda environment "DTO_conda" will persist in your WEkEO JupyterHub workspace, meaning that you will not need to spend time resinstalling extra libraries every time you restart a server instance:<br/>
+To create the required python environment:
+1. Create a custom conda environment using the YAML file provided in this repository (DTO_conda.yaml"). This environment can be used to run all notebooks provided in this repository. This new conda environment "DTO_conda" will persist in your WEkEO JupyterHub workspace, meaning that you will not need to spend time resinstalling extra libraries every time you restart a server instance:<br/>
     - Open a terminal in your WEkEO JupyterHub <br/>
     - Use the YAML file included in this repo to create a new environment: <br/>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;conda env create -f DTO_conda.yaml <br/>
@@ -44,8 +47,8 @@ All code can be run in the WEkEO Jupyter environment with the following steps:
     - Refresh the webpage for the changes to take effect.<br/>
     - With a notebook open, select the newly created kernel "DTO_conda" in the upper right hand corner of the screen.<br/>
     - You are now ready to run the notebook!<br/>
-3. Replace the "username" and "password" variables at the beginning of the notebook with your own credentials for Copernicus Marine
-4. Run the notebook, making sure to use your new "DTO_conda" kernel
+2. Replace the "username" and "password" variables at the beginning of the notebook with your own credentials for Copernicus Marine
+3. Run the notebook, making sure to use your new "DTO_conda" kernel
 
 Alternatively, you can use the preinstalled "wekeolab" conda environment and install a number of extra python packages. Note that if you choose this option you will need to reinstall these packages every time you restart your server instance:
 1. Open a terminal in your WEkEO JupyterHub.
