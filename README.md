@@ -25,7 +25,7 @@ The primary objective of the pilot is to demonstrate how open-access remote sens
 
 Together, these data products comprise a Digital Twin Ocean prototype, which can be built upon and scaled to generate a full-scale DTO for marine planning purposes.
 
-For a detailed technical description of the project and data products please see the technical report included in this repository: [text](https://github.com/WSP-Sweden/DTO-Skagerrak/blob/main/WSP_DTO_Lysekil_Technical_Report_20250528.pdf)
+For a detailed technical description of the project and data products please see the technical report included in this repository: [Technical Report](https://github.com/WSP-Sweden/DTO-Skagerrak/blob/main/WSP_DTO_Lysekil_Technical_Report_20250528.pdf)
 
 ## Code Usage
 All code is provided in annotated tutorial Jupyter Notebooks which require very little programming experience to investigate and run. All code can be used for further development in different projects. To run the code provided in this repository the user needs to complete the following steps:
