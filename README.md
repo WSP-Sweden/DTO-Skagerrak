@@ -20,7 +20,7 @@ The primary objective of the pilot is to demonstrate how open-access remote sens
 ### Water Quality Indicators 
   - Three different water quality indicators are investigated in the coastal regions of the Skagerrak and Kattegat seas. These indicators include: secchi depth (water clarity), chlorophyll-a concentration, and 
     oxygen availability at the seafloor. All indicators are generated using remote sensing products from the Copernicus Marine Service.
-  - For relevant indicators, data is classified according the swedish environmental quality standards for coastal waters, showing the potential for remote sensing digital twins to replace or contribute to 
+  - For relevant indicators, data is classified according to the swedish environmental quality standards for coastal waters, showing the potential for remote sensing digital twins to replace or contribute to 
     extensive yearly water testing protocols.
 
 Together, these data products comprise a Digital Twin Ocean prototype, which can be built upon and scaled to generate a full-scale DTO for marine planning purposes.
