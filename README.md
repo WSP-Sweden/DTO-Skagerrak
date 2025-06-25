@@ -8,12 +8,14 @@ The primary objective of the pilot is to demonstrate how open-access remote sens
 ### Euphotic Depth and Zone Delineation 
   - The Euphotic depth refers to the upper layer of the ocean where light can penetrate, allowing photosynthesis to occur. The Eupthotic zone refers to areas where at least 1% of light incident at the water surface reaches the seafloor. These are important environmental factors as they reflect the seabed area available for underwater vegetation, which is in turn an important factor in the health of many marine ecosystems.
   - An investigation into the light properties of the underwater environment. Includes time series calculations of the depth of blue-green light penetration (490nm), areas where light is incident on the seafloor (and what percentage of light reaches the seafloor), and methods for aggregating and dynamically visualizing the results.
+  - Bathymetry data is included for the region of interest, and is required for the investigation of the Euphotic zone.
     
 ### Macroalgae Habitat Distribution
   - Macroalgae communities are important ecosystem components in shallow coastal marine areas where they often form dense belts on hard substrates and provide a complex habitat for a large number of species. 
     Increased nutrition load and a following decrease in Secchi depth in coastal areas is a threat that will limit the distribution of macroalgae communities to a shallower depth, decreasing the total area 
     covered by these communities. The spatial distribution and cover of macroalgae communities is therefore subject to change over time and depend on environmental factors that can be monitored using RS data.
-  - A machine learning model used to predict macroalgae habitat zones is presented along with training data.
+  - A machine learning model used to predict macroalgae habitat zones based on environmental conditions of the past 9 years (2016-2024) is presented as well as a separate notebook for result visualization and investigation.
+  - Training data of benthic macroalgae occurences from SMHIs SHARK database is included along with the code tutorial.
 
 ### Water Quality Indicators 
   - Three different water quality indicators are investigated in the coastal regions of the Skagerrak and Kattegat seas. These indicators include: secchi depth (water clarity), chlorophyll-a concentration, and 
